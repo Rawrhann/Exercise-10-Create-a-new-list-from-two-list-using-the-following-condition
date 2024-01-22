@@ -8,7 +8,13 @@ second_list = [40, 45, 60, 75, 90]
 final_list = []
     
 for i in range(0, 5, 1):
+    if first_list[i] % 2 == 0:
+        ""
+    else:
+        final_list.append(first_list[i])
+
+for i in range(0, 5, 1):
     if second_list[i] % 2 == 0:
         final_list.append(second_list[i])
     
-print(final_list)
+print("the result is", final_list)
